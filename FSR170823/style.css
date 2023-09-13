@@ -1,0 +1,91 @@
+/* #myDiv{
+    color:red
+} */
+/* Pseudo Classes(:) */
+div p:first-child{
+    /* background-color: yellow; */
+}
+div p:last-child{
+    /* background-color: green; */
+}
+div span:last-of-type{
+background-color: aqua;
+}
+div span:first-of-type{
+    background-color: aqua;
+    }
+    /* div p:nth-child(2) {
+    color:red
+ }   */
+ div p:nth-child(2n){
+    color:teal
+    /* \\n=0
+    2*0=0
+    2*1=2
+    2*2=4 */
+ }
+ div p:nth-child(2n+1){
+    color:green
+    /* 2*0+1=1
+    2*1+1=3 */
+ }
+
+ input[type="text"]:focus{
+    border:3px solid red;
+    color:violet
+ }
+ input[type="text"]:disabled{
+    background-color: gray;
+ }
+input[type="checkbox"]:checked +label{
+    color:green
+}
+button:hover{
+    background-color: yellowgreen;
+}
+
+ul li{
+    list-style-type: none;
+    display:inline-block
+}
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:purple
+}
+a:active{
+    color:yellow
+}
+a:hover{
+    color:teal;
+    font-size: 20px;
+}
+ /* Pseudo Elements(::) */
+ /* 1.Before
+ 2.After */
+ div p{
+    position:relative;
+    padding-left:30px;
+ }
+ div p::before{
+    content:" 😄";
+    padding-right:10px;
+    position:absolute;
+    left:0
+ }
+
+ div::after{
+    /* content:"😄" */
+ }
+ .myClass p{
+    display:flex
+ }
+ .myClass p::after{
+    content:url('https://unsplash.com/photos/a-path-in-a-park-lined-with-trees-K2AWz4lXrAM');
+    
+    }
+
+ 
+

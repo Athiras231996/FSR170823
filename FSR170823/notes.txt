@@ -1,0 +1,7 @@
+Pseudo===>not real
+DOM=>Document Object Model
+
+1.pseudo elements
+2.pseudo classes=>for selecting html elements
+ block level elements=>occupies whole space/new line
+ inline=>span

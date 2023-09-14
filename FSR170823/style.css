@@ -80,12 +80,25 @@ a:hover{
     /* content:"😄" */
  }
  .myClass p{
-    display:flex
- }
- .myClass p::after{
-    content:url('https://unsplash.com/photos/a-path-in-a-park-lined-with-trees-K2AWz4lXrAM');
-    
-    }
+     /* position: relative;  */
+    padding-left: 60px;
+     }
+ .myClass p::before
+ {
+    background: url("https://images.pexels.com/photos/1287142/pexels-photo-1287142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+ display: inline-block;
+ width: 40px;
+ height:40px;
+ content: '';
+}
+
+.myClass p::after {
+ background: url("https://picsum.photos/40/40");
+ display: inline-block;
+ width: 40px;
+ height: 40px;
+ content: '';
+}
 
  
 
